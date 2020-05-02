@@ -1,21 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>Welcome to L义rics!</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="nesting.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<style>
+@media (min-width: 800px) {
+    h1::before {
+        content:" L义rics to songs by N义K";
+        text-align: center;
+    }
+}
+body {
+    background-color: lightblue;
+}
+
+@media (max-width: 799px) {
+    h1::before {
+        content: "L义rics";
+    }
+    body {
+        background-color: violet;
+    }
+}
+    button {
+        width: 200px;
+        height: 50px;
+        font-size: 14px;
+        background-color: green;
+        padding: 20px;
+    }
+
+    button:hover {
+        background-color: orange;
+    }
+</style>
 </head>
 <body>
+  <h1 class="display-3">
 
-  <h1>Here you will find Lyrics to songs by N义K</h1>
+  </h1>
+
+
 
   <ol>
     <li><h2>"A voice that is dormant can only spit curses"</h2></li>
 
-  <p>...........................................</p>
+<button>Click me for Souncloud!</button>
+
 
   <p>
   <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-  Button with data-target
+  Click here for L义rics ;)
   </button>
 </p>
     <div class="collapse" id="collapseExample">
@@ -24,19 +65,38 @@
     </div>
     </div>
 
-      <button type="button" class="btn btn-link">hey</button>
       <div class="card" style="width: 18rem;">
-      <img src="C:\Users\win\Desktop\html\pink rose.jpg" class="card-img-top" alt="Pink Rose">
+      <img src="data:image/jpeg;base64,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" class="card-img-to" alt="Pink Rose">
       <div class="card-body">
 
-        <h5 class="card-title">A voice that is dormant...</h5>
-        <p class="card-text">...............</p>
+        <h5 class="card-title">"audio might go here"</h5>
+        <p class="card-text">"description of song"</p>
         <ul class="list-group list-group-flush">
-    <li class="list-group-item">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Vestibulum at eros</li>
+    <li class="list-group-item">Artist: N义K</li>
+    <li class="list-group-item">Production: N义K</li>
+    <li class="list-group-item">Writing:  N义K</li>
   </ul>
       </div>
     </div>
+
+    <div>
+        <p>This is a paragraph inside the div.</p>
+
+        List inside the div:
+        <ul>
+            <li>item one</li>
+            <li>item two</li>
+            <li>item three</li>
+        </ul>
+    </div>
+
+    <p>This is a paragraph outside the div.</p>
+
+    List outside the div:
+    <ul>
+        <li>item one</li>
+        <li>item two</li>
+        <li>item three</li>
+    </ul>
 <body>
 </html>
